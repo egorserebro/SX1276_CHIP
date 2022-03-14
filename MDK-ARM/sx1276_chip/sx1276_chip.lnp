@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"sx1276_chip\startup_stm32f103x6.o"
+"sx1276_chip\sx1276regs.o"
+"sx1276_chip\main.o"
+"sx1276_chip\gpio.o"
+"sx1276_chip\dma.o"
+"sx1276_chip\spi.o"
+"sx1276_chip\stm32f1xx_it.o"
+"sx1276_chip\stm32f1xx_ll_gpio.o"
+"sx1276_chip\stm32f1xx_ll_dma.o"
+"sx1276_chip\stm32f1xx_ll_spi.o"
+"sx1276_chip\stm32f1xx_ll_rcc.o"
+"sx1276_chip\stm32f1xx_ll_utils.o"
+"sx1276_chip\stm32f1xx_ll_exti.o"
+"sx1276_chip\stm32f1xx_ll_pwr.o"
+"sx1276_chip\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "sx1276_chip\sx1276_chip.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "sx1276_chip.map" -o sx1276_chip\sx1276_chip.axf
