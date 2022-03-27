@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/mars/Desktop/Loro 1Wt/sx1276_chip/Inc
+HeaderPath=C:/Users/mars/Desktop/Loro 1Wt/sx1276_chip/SX1276_CHIP/Inc
 HeaderFiles=gpio.h;spi.h;stm32f1xx_it.h;stm32_assert.h;stm32f1xx_hal_conf.h;main.h;dma.h;
-SourcePath=C:/Users/mars/Desktop/Loro 1Wt/sx1276_chip/Src
+SourcePath=C:/Users/mars/Desktop/Loro 1Wt/sx1276_chip/SX1276_CHIP/Src
 SourceFiles=gpio.c;spi.c;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;dma.c;
 
 [PreviousLibFiles]

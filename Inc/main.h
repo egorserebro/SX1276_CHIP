@@ -77,8 +77,11 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define DI01_SX1276_Pin LL_GPIO_PIN_1
-#define DI01_SX1276_GPIO_Port GPIOA
+#define LED13_Pin LL_GPIO_PIN_13
+#define LED13_GPIO_Port GPIOC
+#define DI01_SX1276_EXIT_Pin LL_GPIO_PIN_1
+#define DI01_SX1276_EXIT_GPIO_Port GPIOA
+#define DI01_SX1276_EXIT_EXTI_IRQn EXTI1_IRQn
 #define DI02_SX1276_Pin LL_GPIO_PIN_2
 #define DI02_SX1276_GPIO_Port GPIOA
 #define NSS_SX1276_Pin LL_GPIO_PIN_3

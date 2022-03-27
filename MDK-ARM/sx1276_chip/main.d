@@ -22,5 +22,5 @@ sx1276_chip\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 sx1276_chip\main.o: ../Inc/dma.h
 sx1276_chip\main.o: ../Inc/spi.h
 sx1276_chip\main.o: ../Inc/gpio.h
-sx1276_chip\main.o: ../Inc/sx1276Regs.h
-sx1276_chip\main.o: ../Inc/sx1276Regs-LoRa.h
+sx1276_chip\main.o: ../Inc/SX1276_77_78_79_control_v2.h
+sx1276_chip\main.o: ../Inc/SX1276_77_78_79_REGISTERS.h

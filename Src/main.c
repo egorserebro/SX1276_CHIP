@@ -26,8 +26,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "sx1276Regs.h"
-#include "sx1276Regs-LoRa.h"
+#include "SX1276_77_78_79_control_v2.h"
+
 
 /* USER CODE END Includes */
 
@@ -60,6 +60,10 @@ while (ITM_Port32(0) == 0);
   }
   return(ch);
 }
+uint8_t TX_BUF[16] = {0,1,2,3};
+uint8_t i,Flag=0,rx_bytes,counter;
+
+SX1278_State_t SX1278_State;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -113,7 +117,10 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+	SX1278_State.NodeAddress = 0x1;
+	SX1278_State.BroadcastAddress = 0x0;
+	SX1278_State.PacketPayloadSize = 0x9;
+	
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -123,27 +130,29 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	DMA_USER_INIT();
 	SPI1_USER_INIT();
-	SX1276_Init();	
-	uint8_t i =0;
+	//SX1276_Init();	
+	//sx127x_read_register(0x42);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+	
+SX1276_77_78_79_Reset();
+SX1276_77_78_79_LORA_Init(SX1278_State.NodeAddress,SX1278_State.BroadcastAddress, SX1278_State.PacketPayloadSize, 868, 6);
+
+
+  
   while (1)
   {
     /* USER CODE END WHILE */
-
+	readRegOpMode();
     /* USER CODE BEGIN 3 */
-	  i++;
-	buff_LORA_OUT[13]=i;	
-	SX1276_WriteSingle(REG_LR_DIOMAPPING1,	RFLR_DIOMAPPING1_DIO0_01);
-	SX1276_WriteSingle(REG_LR_SYNCWORD, 0x12);	
-	SX1276_WriteSingle(REG_LR_OPMODE,RFLR_OPMODE_STANDBY|0x80);
-	SX1276_WriteSingle(REG_LR_FIFOADDRPTR,0x80);
-	SX1276_WriteBurst( REG_LR_FIFO, buff_LORA_OUT, 16);
-	SX1276_WriteSingle(REG_LR_OPMODE,RFLR_OPMODE_TRANSMITTER|0x80); 
+	SX1276_77_78_79_sendData(TX_BUF, 9);
+	LL_mDelay(10);  
 
 //while (!Flag) {};	
+	  
 //SX1276_WriteSingle(REG_LR_OPMODE,RFLR_OPMODE_SLEEP|0x80);	
 //Flag=0;
 //delay_ms(3000);
@@ -153,9 +162,12 @@ int main(void)
 	  
 	  
 	  
-	  SX1276_WriteSingle(1,1);
-	  LL_mDelay(500);
-	  printf("hello");
+	 // SX1276_WriteSingle(1,1);
+//	  LL_mDelay(100);
+//	LL_GPIO_SetOutputPin(LED13_GPIO_Port, LED13_Pin);
+		LL_mDelay(100);
+//	LL_GPIO_ResetOutputPin(LED13_GPIO_Port, LED13_Pin);	
+	  printf("hello\n");
   }
   /* USER CODE END 3 */
 }
