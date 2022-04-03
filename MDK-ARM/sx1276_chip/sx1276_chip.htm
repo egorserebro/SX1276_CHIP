@@ -3,7 +3,7 @@
 <title>Static Call Graph - [sx1276_chip\sx1276_chip.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image sx1276_chip\sx1276_chip.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sun Mar 27 14:35:44 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Mon Mar 28 22:45:18 2022
 <BR><P>
 <H3>Maximum Stack Usage =        120 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -77,7 +77,7 @@ Global Symbols
 <P><STRONG><a name="[32]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(.text)
 </UL>
-<P><STRONG><a name="[c9]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[c2]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[34]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -87,15 +87,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[ca]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[c3]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[cb]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[c4]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[cc]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[c5]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[cd]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[c6]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[ce]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[c7]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f103x6.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
@@ -206,22 +206,22 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f103x6.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
 </UL>
-<P><STRONG><a name="[be]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifo
+<P><STRONG><a name="[b7]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifo
 </UL>
 
-<P><STRONG><a name="[cf]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[c8]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[d0]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[c9]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[37]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[d1]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[ca]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[d2]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[cb]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[36]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -232,7 +232,7 @@ Global Symbols
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
-<P><STRONG><a name="[d3]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[cc]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[38]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -264,7 +264,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[d4]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[cd]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[3a]"></a>_float_round</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fepilogue.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
@@ -282,7 +282,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[d5]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[ce]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
@@ -327,8 +327,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
 </UL>
-<P><STRONG><a name="[c0]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<P><STRONG><a name="[b9]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.HardFault_Handler))
@@ -354,8 +354,8 @@ Global Symbols
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
-<P><STRONG><a name="[c1]"></a>LL_Init1msTick</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f1xx_ll_utils.o(i.LL_Init1msTick))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<P><STRONG><a name="[ba]"></a>LL_Init1msTick</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f1xx_ll_utils.o(i.LL_Init1msTick))
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[65]"></a>LL_SPI_Init</STRONG> (Thumb, 100 bytes, Stack size 12 bytes, stm32f1xx_ll_spi.o(i.LL_SPI_Init))
@@ -364,8 +364,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI1_Init
 </UL>
 
-<P><STRONG><a name="[c2]"></a>LL_SetSystemCoreClock</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f1xx_ll_utils.o(i.LL_SetSystemCoreClock))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<P><STRONG><a name="[bb]"></a>LL_SetSystemCoreClock</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f1xx_ll_utils.o(i.LL_SetSystemCoreClock))
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[44]"></a>LL_mDelay</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, stm32f1xx_ll_utils.o(i.LL_mDelay))
@@ -373,9 +373,9 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 <LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
 </UL>
 
 <P><STRONG><a name="[4c]"></a>MX_DMA_Init</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, dma.o(i.MX_DMA_Init))
@@ -434,7 +434,7 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
 </UL>
-<P><STRONG><a name="[c5]"></a>SPI1_USER_INIT</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, spi.o(i.SPI1_USER_INIT))
+<P><STRONG><a name="[be]"></a>SPI1_USER_INIT</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, spi.o(i.SPI1_USER_INIT))
 <BR><BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -444,102 +444,95 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetOutputPin
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_ResetOutputPin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeOpMode
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifoPtrAddr_L
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifo
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeDIOMapping
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeOpMode
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifoPtrAddr_L
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifo
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeDIOMapping
 </UL>
 
 <P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
 </UL>
-<P><STRONG><a name="[69]"></a>SX1276_77_78_79_LORA_Init</STRONG> (Thumb, 1618 bytes, Stack size 56 bytes, sx1276regs.o(i.SX1276_77_78_79_LORA_Init))
+<P><STRONG><a name="[69]"></a>SX1276_77_78_79_LORA_Init</STRONG> (Thumb, 1534 bytes, Stack size 56 bytes, sx1276regs.o(i.SX1276_77_78_79_LORA_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SX1276_77_78_79_LORA_Init &rArr; writeRegTimerResol &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimerResol
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer2Coef
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer1Coef
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue8
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue7
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue6
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue5
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue4
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue3
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue2
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue1
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncConfig
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig2
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig1
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout3
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout2
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout1
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxDelay
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimerResol
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer2Coef
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer1Coef
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue8
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue7
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue6
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue5
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue4
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue3
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue2
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue1
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncConfig
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig2
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig1
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout3
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout2
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout1
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxDelay
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxConfig
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxBw
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiThreshold
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiConfig
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiCollision
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleMsb
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleLsb
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleDetect
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPayloadLength
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig2
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig1
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleMsb
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleLsb
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleDetect
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPayloadLength
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig2
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig1
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPaRamp
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPaConfig
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOsc
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOsc
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOpMode
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokPeak
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokFix
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokAvg
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOcp
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegNodeAdrs
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLowBat
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegNodeAdrs
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLowBat
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLna
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegImageCal
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegImageCal
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfMsb
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfMid
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfLsb
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFifoThresh
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiMsb
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiLsb
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFifoThresh
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiMsb
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiLsb
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegDioMapping2
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegDioMapping1
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegBroadcastAdrs
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcMsb
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcLsb
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcFei
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcBw
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSyncWord
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSymbolTimeoutLsb
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthMsb
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthLsb
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadMaxLength
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadLength
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig3
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig2
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig1
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq2
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq1
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegIrqFlagsMask
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegHighBWOptimize1
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFreqHoppingPeriod
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoTxBaseAddr
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoRxBaseAddr
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoAddrPtr
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectionThreshold
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectOptimize
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegBroadcastAdrs
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcMsb
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcLsb
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSyncWord
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSymbolTimeoutLsb
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthMsb
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthLsb
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadMaxLength
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadLength
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig3
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig2
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig1
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq2
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq1
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegIrqFlagsMask
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegHighBWOptimize1
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFreqHoppingPeriod
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoTxBaseAddr
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoRxBaseAddr
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoAddrPtr
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectionThreshold
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectOptimize
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readRegOpMode
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calculate_time_on_air_for_LoRa_ms
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calculate_time_on_air_for_LoRa_ms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b7]"></a>SX1276_77_78_79_Reset</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx1276regs.o(i.SX1276_77_78_79_Reset))
+<P><STRONG><a name="[b0]"></a>SX1276_77_78_79_Reset</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx1276regs.o(i.SX1276_77_78_79_Reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SX1276_77_78_79_Reset &rArr; LL_mDelay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetOutputPin
@@ -549,67 +542,67 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b8]"></a>SX1276_77_78_79_sendData</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_sendData))
+<P><STRONG><a name="[b1]"></a>SX1276_77_78_79_sendData</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_sendData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SX1276_77_78_79_sendData &rArr; SX1276_77_78_79_setMode &rArr; SX1276_77_78_79_writeOpMode &rArr; SPI_dma_request_read_write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifoPtrAddr_L
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifo
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeDIOMapping
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_setMode
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifoPtrAddr_L
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeFifo
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeDIOMapping
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_setMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b9]"></a>SX1276_77_78_79_setMode</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_setMode))
+<P><STRONG><a name="[b2]"></a>SX1276_77_78_79_setMode</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_setMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SX1276_77_78_79_setMode &rArr; SX1276_77_78_79_writeOpMode &rArr; SPI_dma_request_read_write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeOpMode
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_writeOpMode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
 </UL>
 
-<P><STRONG><a name="[bb]"></a>SX1276_77_78_79_writeDIOMapping</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeDIOMapping))
+<P><STRONG><a name="[b4]"></a>SX1276_77_78_79_writeDIOMapping</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeDIOMapping))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX1276_77_78_79_writeDIOMapping &rArr; SPI_dma_request_read_write
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_dma_request_read_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
 </UL>
 
-<P><STRONG><a name="[ba]"></a>SX1276_77_78_79_writeFifo</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeFifo))
+<P><STRONG><a name="[b3]"></a>SX1276_77_78_79_writeFifo</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeFifo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX1276_77_78_79_writeFifo &rArr; SPI_dma_request_read_write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_dma_request_read_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
 </UL>
 
-<P><STRONG><a name="[bc]"></a>SX1276_77_78_79_writeFifoPtrAddr_L</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeFifoPtrAddr_L))
+<P><STRONG><a name="[b5]"></a>SX1276_77_78_79_writeFifoPtrAddr_L</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeFifoPtrAddr_L))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX1276_77_78_79_writeFifoPtrAddr_L &rArr; SPI_dma_request_read_write
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_dma_request_read_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
 </UL>
 
-<P><STRONG><a name="[bd]"></a>SX1276_77_78_79_writeOpMode</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeOpMode))
+<P><STRONG><a name="[b6]"></a>SX1276_77_78_79_writeOpMode</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, sx1276regs.o(i.SX1276_77_78_79_writeOpMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX1276_77_78_79_writeOpMode &rArr; SPI_dma_request_read_write
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_dma_request_read_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_setMode
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_setMode
 </UL>
 
 <P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.SysTick_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
 </UL>
-<P><STRONG><a name="[bf]"></a>SystemClock_Config</STRONG> (Thumb, 228 bytes, Stack size 8 bytes, main.o(i.SystemClock_Config))
+<P><STRONG><a name="[b8]"></a>SystemClock_Config</STRONG> (Thumb, 228 bytes, Stack size 8 bytes, main.o(i.SystemClock_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SystemClock_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SetSystemCoreClock
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_Init1msTick
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SetSystemCoreClock
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_Init1msTick
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -620,351 +613,326 @@ Global Symbols
 <P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103x6.o(RESET)
 </UL>
-<P><STRONG><a name="[c3]"></a>__0printf$bare</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, printfb.o(i.__0printf$bare), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[bc]"></a>__0printf$bare</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, printfb.o(i.__0printf$bare), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[d6]"></a>__1printf$bare</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfb.o(i.__0printf$bare), UNUSED)
+<P><STRONG><a name="[cf]"></a>__1printf$bare</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfb.o(i.__0printf$bare), UNUSED)
 
-<P><STRONG><a name="[c6]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfb.o(i.__0printf$bare))
+<P><STRONG><a name="[bf]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfb.o(i.__0printf$bare))
 <BR><BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d7]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[d0]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[d8]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[d1]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[d9]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[d2]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[b6]"></a>calculate_time_on_air_for_LoRa_ms</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sx1276regs.o(i.calculate_time_on_air_for_LoRa_ms))
+<P><STRONG><a name="[af]"></a>calculate_time_on_air_for_LoRa_ms</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sx1276regs.o(i.calculate_time_on_air_for_LoRa_ms))
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
 <P><STRONG><a name="[33]"></a>fputc</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, main.o(i.fputc))
 <BR>[Address Reference Count : 1]<UL><LI> printfb.o(i.__0printf$bare)
 </UL>
-<P><STRONG><a name="[30]"></a>main</STRONG> (Thumb, 196 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[30]"></a>main</STRONG> (Thumb, 212 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = main &rArr; SX1276_77_78_79_LORA_Init &rArr; writeRegTimerResol &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI1_USER_INIT
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI1_USER_INIT
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI1_Init
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_USER_INIT
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_mDelay
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readRegOpMode
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_sendData
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[c7]"></a>readFromRegisterSync</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, sx1276regs.o(i.readFromRegisterSync))
+<P><STRONG><a name="[c0]"></a>readFromRegisterSync</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, sx1276regs.o(i.readFromRegisterSync))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = readFromRegisterSync &rArr; LL_mDelay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetOutputPin
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_ResetOutputPin
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_mDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimerResol
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer2Coef
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer1Coef
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue8
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue7
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue6
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue5
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue4
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue3
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue2
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue1
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncConfig
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig2
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig1
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout3
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout2
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout1
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxDelay
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimerResol
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer2Coef
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer1Coef
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue8
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue7
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue6
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue5
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue4
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue3
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue2
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue1
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncConfig
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig2
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig1
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout3
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout2
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout1
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxDelay
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxConfig
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxBw
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiThreshold
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiConfig
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiCollision
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleMsb
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleLsb
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleDetect
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPayloadLength
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig2
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig1
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleMsb
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleLsb
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleDetect
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPayloadLength
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig2
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig1
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPaRamp
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPaConfig
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOsc
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOsc
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOpMode
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokPeak
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokFix
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokAvg
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOcp
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegNodeAdrs
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLowBat
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegNodeAdrs
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLowBat
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLna
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegImageCal
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegImageCal
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfMsb
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfMid
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfLsb
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFifoThresh
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiMsb
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiLsb
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFifoThresh
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiMsb
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiLsb
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegDioMapping2
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegDioMapping1
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegBroadcastAdrs
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcMsb
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcLsb
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcFei
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcBw
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSyncWord
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSymbolTimeoutLsb
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthMsb
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthLsb
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadMaxLength
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadLength
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig3
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig2
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig1
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq2
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq1
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegIrqFlagsMask
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegHighBWOptimize1
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFreqHoppingPeriod
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoTxBaseAddr
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoRxBaseAddr
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoAddrPtr
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectionThreshold
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectOptimize
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegBroadcastAdrs
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcMsb
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcLsb
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSyncWord
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSymbolTimeoutLsb
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthMsb
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthLsb
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadMaxLength
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadLength
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig3
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig2
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig1
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq2
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq1
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegIrqFlagsMask
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegHighBWOptimize1
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFreqHoppingPeriod
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoTxBaseAddr
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoRxBaseAddr
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoAddrPtr
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectionThreshold
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectOptimize
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readRegOpMode
 </UL>
 
 <P><STRONG><a name="[76]"></a>readRegOpMode</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, sx1276regs.o(i.readRegOpMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = readRegOpMode &rArr; readFromRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[b0]"></a>writeLoRaRegDetectOptimize</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegDetectOptimize))
+<P><STRONG><a name="[a9]"></a>writeLoRaRegDetectOptimize</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegDetectOptimize))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegDetectOptimize &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[b4]"></a>writeLoRaRegDetectionThreshold</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegDetectionThreshold))
+<P><STRONG><a name="[ad]"></a>writeLoRaRegDetectionThreshold</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegDetectionThreshold))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegDetectionThreshold &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a3]"></a>writeLoRaRegFifoAddrPtr</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFifoAddrPtr))
+<P><STRONG><a name="[9c]"></a>writeLoRaRegFifoAddrPtr</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFifoAddrPtr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegFifoAddrPtr &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a5]"></a>writeLoRaRegFifoRxBaseAddr</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFifoRxBaseAddr))
+<P><STRONG><a name="[9e]"></a>writeLoRaRegFifoRxBaseAddr</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFifoRxBaseAddr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegFifoRxBaseAddr &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a4]"></a>writeLoRaRegFifoTxBaseAddr</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFifoTxBaseAddr))
+<P><STRONG><a name="[9d]"></a>writeLoRaRegFifoTxBaseAddr</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFifoTxBaseAddr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegFifoTxBaseAddr &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[ae]"></a>writeLoRaRegFreqHoppingPeriod</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFreqHoppingPeriod))
+<P><STRONG><a name="[a7]"></a>writeLoRaRegFreqHoppingPeriod</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegFreqHoppingPeriod))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegFreqHoppingPeriod &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[b3]"></a>writeLoRaRegHighBWOptimize1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegHighBWOptimize1))
+<P><STRONG><a name="[ac]"></a>writeLoRaRegHighBWOptimize1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegHighBWOptimize1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegHighBWOptimize1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a6]"></a>writeLoRaRegIrqFlagsMask</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegIrqFlagsMask))
+<P><STRONG><a name="[9f]"></a>writeLoRaRegIrqFlagsMask</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegIrqFlagsMask))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegIrqFlagsMask &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[b2]"></a>writeLoRaRegLfFreq1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegLfFreq1))
+<P><STRONG><a name="[ab]"></a>writeLoRaRegLfFreq1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegLfFreq1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegLfFreq1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[b1]"></a>writeLoRaRegLfFreq2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegLfFreq2))
+<P><STRONG><a name="[aa]"></a>writeLoRaRegLfFreq2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegLfFreq2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegLfFreq2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a7]"></a>writeLoRaRegModemConfig1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegModemConfig1))
+<P><STRONG><a name="[a0]"></a>writeLoRaRegModemConfig1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegModemConfig1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegModemConfig1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a8]"></a>writeLoRaRegModemConfig2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegModemConfig2))
+<P><STRONG><a name="[a1]"></a>writeLoRaRegModemConfig2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegModemConfig2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegModemConfig2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[af]"></a>writeLoRaRegModemConfig3</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegModemConfig3))
+<P><STRONG><a name="[a8]"></a>writeLoRaRegModemConfig3</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegModemConfig3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegModemConfig3 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[ac]"></a>writeLoRaRegPayloadLength</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPayloadLength))
+<P><STRONG><a name="[a5]"></a>writeLoRaRegPayloadLength</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPayloadLength))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegPayloadLength &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[ad]"></a>writeLoRaRegPayloadMaxLength</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPayloadMaxLength))
+<P><STRONG><a name="[a6]"></a>writeLoRaRegPayloadMaxLength</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPayloadMaxLength))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegPayloadMaxLength &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[ab]"></a>writeLoRaRegPreambleLengthLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPreambleLengthLsb))
+<P><STRONG><a name="[a4]"></a>writeLoRaRegPreambleLengthLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPreambleLengthLsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegPreambleLengthLsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[aa]"></a>writeLoRaRegPreambleLengthMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPreambleLengthMsb))
+<P><STRONG><a name="[a3]"></a>writeLoRaRegPreambleLengthMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegPreambleLengthMsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegPreambleLengthMsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a9]"></a>writeLoRaRegSymbolTimeoutLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegSymbolTimeoutLsb))
+<P><STRONG><a name="[a2]"></a>writeLoRaRegSymbolTimeoutLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegSymbolTimeoutLsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegSymbolTimeoutLsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[b5]"></a>writeLoRaRegSyncWord</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegSyncWord))
+<P><STRONG><a name="[ae]"></a>writeLoRaRegSyncWord</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeLoRaRegSyncWord))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeLoRaRegSyncWord &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[7c]"></a>writeRegAfcBw</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegAfcBw))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegAfcBw &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[80]"></a>writeRegAfcFei</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegAfcFei))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegAfcFei &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[82]"></a>writeRegAfcLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegAfcLsb))
+<P><STRONG><a name="[7b]"></a>writeRegAfcLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegAfcLsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegAfcLsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[81]"></a>writeRegAfcMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegAfcMsb))
+<P><STRONG><a name="[7a]"></a>writeRegAfcMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegAfcMsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegAfcMsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[9a]"></a>writeRegBroadcastAdrs</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegBroadcastAdrs))
+<P><STRONG><a name="[93]"></a>writeRegBroadcastAdrs</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegBroadcastAdrs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegBroadcastAdrs &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -972,8 +940,8 @@ Global Symbols
 <P><STRONG><a name="[6b]"></a>writeRegDioMapping1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegDioMapping1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegDioMapping1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -981,35 +949,35 @@ Global Symbols
 <P><STRONG><a name="[6c]"></a>writeRegDioMapping2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegDioMapping2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegDioMapping2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[84]"></a>writeRegFeiLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFeiLsb))
+<P><STRONG><a name="[7d]"></a>writeRegFeiLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFeiLsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegFeiLsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[83]"></a>writeRegFeiMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFeiMsb))
+<P><STRONG><a name="[7c]"></a>writeRegFeiMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFeiMsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegFeiMsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[9b]"></a>writeRegFifoThresh</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFifoThresh))
+<P><STRONG><a name="[94]"></a>writeRegFifoThresh</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFifoThresh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegFifoThresh &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1017,8 +985,8 @@ Global Symbols
 <P><STRONG><a name="[71]"></a>writeRegFrfLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFrfLsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegFrfLsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1026,8 +994,8 @@ Global Symbols
 <P><STRONG><a name="[70]"></a>writeRegFrfMid</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFrfMid))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegFrfMid &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1035,17 +1003,17 @@ Global Symbols
 <P><STRONG><a name="[6f]"></a>writeRegFrfMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegFrfMsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegFrfMsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a1]"></a>writeRegImageCal</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegImageCal))
+<P><STRONG><a name="[9a]"></a>writeRegImageCal</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegImageCal))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegImageCal &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1053,26 +1021,26 @@ Global Symbols
 <P><STRONG><a name="[75]"></a>writeRegLna</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegLna))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegLna &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a2]"></a>writeRegLowBat</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegLowBat))
+<P><STRONG><a name="[9b]"></a>writeRegLowBat</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegLowBat))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegLowBat &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[99]"></a>writeRegNodeAdrs</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegNodeAdrs))
+<P><STRONG><a name="[92]"></a>writeRegNodeAdrs</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegNodeAdrs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegNodeAdrs &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1080,35 +1048,8 @@ Global Symbols
 <P><STRONG><a name="[74]"></a>writeRegOcp</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOcp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegOcp &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[7f]"></a>writeRegOokAvg</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOokAvg))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegOokAvg &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[7e]"></a>writeRegOokFix</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOokFix))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegOokFix &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[7d]"></a>writeRegOokPeak</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOokPeak))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegOokPeak &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1116,17 +1057,17 @@ Global Symbols
 <P><STRONG><a name="[6a]"></a>writeRegOpMode</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOpMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegOpMode &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[8a]"></a>writeRegOsc</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOsc))
+<P><STRONG><a name="[83]"></a>writeRegOsc</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegOsc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegOsc &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1134,8 +1075,8 @@ Global Symbols
 <P><STRONG><a name="[72]"></a>writeRegPaConfig</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPaConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPaConfig &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1143,62 +1084,62 @@ Global Symbols
 <P><STRONG><a name="[73]"></a>writeRegPaRamp</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPaRamp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPaRamp &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[96]"></a>writeRegPacketConfig1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPacketConfig1))
+<P><STRONG><a name="[8f]"></a>writeRegPacketConfig1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPacketConfig1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPacketConfig1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[97]"></a>writeRegPacketConfig2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPacketConfig2))
+<P><STRONG><a name="[90]"></a>writeRegPacketConfig2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPacketConfig2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPacketConfig2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[98]"></a>writeRegPayloadLength</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPayloadLength))
+<P><STRONG><a name="[91]"></a>writeRegPayloadLength</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPayloadLength))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPayloadLength &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[85]"></a>writeRegPreambleDetect</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPreambleDetect))
+<P><STRONG><a name="[7e]"></a>writeRegPreambleDetect</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPreambleDetect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPreambleDetect &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[8c]"></a>writeRegPreambleLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPreambleLsb))
+<P><STRONG><a name="[85]"></a>writeRegPreambleLsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPreambleLsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPreambleLsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[8b]"></a>writeRegPreambleMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPreambleMsb))
+<P><STRONG><a name="[84]"></a>writeRegPreambleMsb</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegPreambleMsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegPreambleMsb &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1206,8 +1147,8 @@ Global Symbols
 <P><STRONG><a name="[79]"></a>writeRegRssiCollision</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRssiCollision))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRssiCollision &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1215,26 +1156,8 @@ Global Symbols
 <P><STRONG><a name="[78]"></a>writeRegRssiConfig</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRssiConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRssiConfig &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[7a]"></a>writeRegRssiThreshold</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRssiThreshold))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRssiThreshold &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-</UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
-</UL>
-
-<P><STRONG><a name="[7b]"></a>writeRegRxBw</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxBw))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRxBw &rArr; writeToRegisterSync &rArr; LL_mDelay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
@@ -1242,270 +1165,263 @@ Global Symbols
 <P><STRONG><a name="[77]"></a>writeRegRxConfig</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRxConfig &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[89]"></a>writeRegRxDelay</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxDelay))
+<P><STRONG><a name="[82]"></a>writeRegRxDelay</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxDelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRxDelay &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[86]"></a>writeRegRxTimeout1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxTimeout1))
+<P><STRONG><a name="[7f]"></a>writeRegRxTimeout1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxTimeout1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRxTimeout1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[87]"></a>writeRegRxTimeout2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxTimeout2))
+<P><STRONG><a name="[80]"></a>writeRegRxTimeout2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxTimeout2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRxTimeout2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[88]"></a>writeRegRxTimeout3</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxTimeout3))
+<P><STRONG><a name="[81]"></a>writeRegRxTimeout3</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegRxTimeout3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegRxTimeout3 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[9c]"></a>writeRegSeqConfig1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSeqConfig1))
+<P><STRONG><a name="[95]"></a>writeRegSeqConfig1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSeqConfig1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSeqConfig1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[9d]"></a>writeRegSeqConfig2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSeqConfig2))
+<P><STRONG><a name="[96]"></a>writeRegSeqConfig2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSeqConfig2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSeqConfig2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[8d]"></a>writeRegSyncConfig</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncConfig))
+<P><STRONG><a name="[86]"></a>writeRegSyncConfig</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncConfig &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[8e]"></a>writeRegSyncValue1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue1))
+<P><STRONG><a name="[87]"></a>writeRegSyncValue1</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue1 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[8f]"></a>writeRegSyncValue2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue2))
+<P><STRONG><a name="[88]"></a>writeRegSyncValue2</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue2 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[90]"></a>writeRegSyncValue3</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue3))
+<P><STRONG><a name="[89]"></a>writeRegSyncValue3</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue3 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[91]"></a>writeRegSyncValue4</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue4))
+<P><STRONG><a name="[8a]"></a>writeRegSyncValue4</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue4))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue4 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[92]"></a>writeRegSyncValue5</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue5))
+<P><STRONG><a name="[8b]"></a>writeRegSyncValue5</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue5))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue5 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[93]"></a>writeRegSyncValue6</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue6))
+<P><STRONG><a name="[8c]"></a>writeRegSyncValue6</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue6))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue6 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[94]"></a>writeRegSyncValue7</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue7))
+<P><STRONG><a name="[8d]"></a>writeRegSyncValue7</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue7))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue7 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[95]"></a>writeRegSyncValue8</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue8))
+<P><STRONG><a name="[8e]"></a>writeRegSyncValue8</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegSyncValue8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegSyncValue8 &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[9f]"></a>writeRegTimer1Coef</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegTimer1Coef))
+<P><STRONG><a name="[98]"></a>writeRegTimer1Coef</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegTimer1Coef))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegTimer1Coef &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[a0]"></a>writeRegTimer2Coef</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegTimer2Coef))
+<P><STRONG><a name="[99]"></a>writeRegTimer2Coef</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegTimer2Coef))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegTimer2Coef &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[9e]"></a>writeRegTimerResol</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegTimerResol))
+<P><STRONG><a name="[97]"></a>writeRegTimerResol</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, sx1276regs.o(i.writeRegTimerResol))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = writeRegTimerResol &rArr; writeToRegisterSync &rArr; LL_mDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_LORA_Init
 </UL>
 
-<P><STRONG><a name="[c8]"></a>writeToRegisterSync</STRONG> (Thumb, 174 bytes, Stack size 32 bytes, sx1276regs.o(i.writeToRegisterSync))
+<P><STRONG><a name="[c1]"></a>writeToRegisterSync</STRONG> (Thumb, 174 bytes, Stack size 32 bytes, sx1276regs.o(i.writeToRegisterSync))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = writeToRegisterSync &rArr; LL_mDelay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetOutputPin
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_ResetOutputPin
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_mDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimerResol
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer2Coef
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer1Coef
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue8
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue7
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue6
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue5
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue4
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue3
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue2
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue1
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncConfig
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig2
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig1
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout3
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout2
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout1
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxDelay
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimerResol
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer2Coef
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegTimer1Coef
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue8
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue7
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue6
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue5
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue4
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue3
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue2
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncValue1
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSyncConfig
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig2
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegSeqConfig1
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout3
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout2
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxTimeout1
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxDelay
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxConfig
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRxBw
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiThreshold
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiConfig
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegRssiCollision
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleMsb
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleLsb
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleDetect
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPayloadLength
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig2
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig1
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleMsb
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleLsb
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPreambleDetect
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPayloadLength
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig2
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPacketConfig1
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPaRamp
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegPaConfig
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOsc
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOsc
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOpMode
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokPeak
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokFix
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOokAvg
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegOcp
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegNodeAdrs
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLowBat
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegNodeAdrs
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLowBat
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegLna
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegImageCal
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegImageCal
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfMsb
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfMid
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFrfLsb
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFifoThresh
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiMsb
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiLsb
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFifoThresh
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiMsb
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegFeiLsb
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegDioMapping2
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegDioMapping1
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegBroadcastAdrs
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcMsb
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcLsb
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcFei
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcBw
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSyncWord
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSymbolTimeoutLsb
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthMsb
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthLsb
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadMaxLength
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadLength
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig3
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig2
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig1
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq2
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq1
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegIrqFlagsMask
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegHighBWOptimize1
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFreqHoppingPeriod
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoTxBaseAddr
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoRxBaseAddr
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoAddrPtr
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectionThreshold
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectOptimize
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegBroadcastAdrs
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcMsb
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeRegAfcLsb
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSyncWord
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegSymbolTimeoutLsb
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthMsb
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPreambleLengthLsb
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadMaxLength
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegPayloadLength
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig3
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig2
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegModemConfig1
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq2
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegLfFreq1
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegIrqFlagsMask
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegHighBWOptimize1
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFreqHoppingPeriod
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoTxBaseAddr
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoRxBaseAddr
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegFifoAddrPtr
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectionThreshold
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeLoRaRegDetectOptimize
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
 <P><STRONG><a name="[67]"></a>LL_GPIO_ResetOutputPin</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sx1276regs.o(i.LL_GPIO_ResetOutputPin))
-<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_dma_request_read_write
 </UL>
 
 <P><STRONG><a name="[68]"></a>LL_GPIO_SetOutputPin</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sx1276regs.o(i.LL_GPIO_SetOutputPin))
-<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeToRegisterSync
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readFromRegisterSync
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276_77_78_79_Reset
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_dma_request_read_write
 </UL>
 
@@ -1670,8 +1586,8 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_Init
 </UL>
 
-<P><STRONG><a name="[c4]"></a>_printf_core</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printfb.o(i._printf_core), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$bare
+<P><STRONG><a name="[bd]"></a>_printf_core</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printfb.o(i._printf_core), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$bare
 </UL>
 <P>
 <H3>

@@ -19,7 +19,7 @@ SX1278_State_t deviceState;
 
 static SPI_dma_req *rwqueue[SPI_READ_WRITE_QUEUE_SIZE];
 static SPI_dma_req **rwqueue_wrptr = rwqueue;
-static SPI_dma_req **rwqueue_rdptr = rwqueue;
+
 static int rwQueueCnt = 0;
 
 static uint8_t *fifoReadPtr;
@@ -49,7 +49,7 @@ static SPI_dma_req readFifoRxCurrentAddrReq;
 static SPI_dma_req readFifoRxBytesNbReq;
 static SPI_dma_req readModemStatusAndRSSIReq;
 
-static uint32_t delayTime = 0;
+
 
 
 
@@ -67,7 +67,7 @@ void SX1276_77_78_79_LORA_Init(uint8_t nodeAddress, uint8_t broadcastAddress, ui
 	//go to sleep mode for config
 	writeRegOpMode(MODE_SLEEP_MODE);
 	deviceState.modulationType = LORA_MODULATION;
-	registersConfig.RegDioMapping1 = L_DIO_0_RX_DONE;
+	registersConfig.RegDioMapping1 = L_DIO_0_TX_DONE;
 	registersConfig.RegDioMapping2 = L_DIO_4_PLL_LOCK | L_DIO_5_CLK_OUT;
 
 	registersConfigWriteErrors.RegDioMapping1 = writeRegDioMapping1(registersConfig.RegDioMapping1);
@@ -97,7 +97,7 @@ void SX1276_77_78_79_LORA_Init(uint8_t nodeAddress, uint8_t broadcastAddress, ui
 	registersConfigWriteErrors.RegLna = writeRegLna(registersConfig.RegLna);
 
 
-	registersConfig.RegOpMode = LONG_RANGE_MODE_LORA_MODE | MODE_SLEEP_MODE | LOW_FREQ_MODE_ON_HIGH_FREQ | L_ACCESS_SHARED_REG;
+	registersConfig.RegOpMode = LONG_RANGE_MODE_LORA_MODE | MODE_SLEEP_MODE | LOW_FREQ_MODE_ON_HIGH_FREQ;
 	registersConfigWriteErrors.RegOpMode = writeRegOpMode(registersConfig.RegOpMode);
 	registersConfigWriteErrors.RegOpMode = writeRegOpMode(registersConfig.RegOpMode); //ACCESS SHARED BIT CHANGE ONLY WHEN  LORA_MODE BIT ALREADY SET IN OP MODE REG
 
@@ -153,13 +153,13 @@ readRegOpMode();
 	registersConfigWriteErrors.RegRxConfig = writeRegRxConfig(registersConfig.RegRxConfig);
 	registersConfigWriteErrors.RegRssiConfig = writeRegRssiConfig(registersConfig.RegRssiConfig);
 	registersConfigWriteErrors.RegRssiCollision = writeRegRssiCollision(registersConfig.RegRssiCollision);
-	registersConfigWriteErrors.RegRssiThresh = writeRegRssiThreshold(registersConfig.RegRssiThresh);
-	registersConfigWriteErrors.RegRxBw = writeRegRxBw(registersConfig.RegRxBw);
-	registersConfigWriteErrors.RegAfcBw = writeRegAfcBw(registersConfig.RegAfcBw);
-	registersConfigWriteErrors.RegOokPeak = writeRegOokPeak(registersConfig.RegOokPeak);
-	registersConfigWriteErrors.RegOokFix = writeRegOokFix(registersConfig.RegOokFix);
-	registersConfigWriteErrors.RegOokAvg = writeRegOokAvg(registersConfig.RegOokAvg);
-	registersConfigWriteErrors.RegAfcFei = writeRegAfcFei(registersConfig.RegAfcFei);
+//	registersConfigWriteErrors.RegRssiThresh = writeRegRssiThreshold(registersConfig.RegRssiThresh);
+//	registersConfigWriteErrors.RegRxBw = writeRegRxBw(registersConfig.RegRxBw);
+//	registersConfigWriteErrors.RegAfcBw = writeRegAfcBw(registersConfig.RegAfcBw);
+//	registersConfigWriteErrors.RegOokPeak = writeRegOokPeak(registersConfig.RegOokPeak);
+//	registersConfigWriteErrors.RegOokFix = writeRegOokFix(registersConfig.RegOokFix);
+//	registersConfigWriteErrors.RegOokAvg = writeRegOokAvg(registersConfig.RegOokAvg);
+//	registersConfigWriteErrors.RegAfcFei = writeRegAfcFei(registersConfig.RegAfcFei);
 	registersConfigWriteErrors.RegAfcMsb = writeRegAfcMsb(registersConfig.RegAfcMsb);
 	registersConfigWriteErrors.RegAfcLsb = writeRegAfcLsb(registersConfig.RegAfcLsb);
 	registersConfigWriteErrors.RegFeiMsb = writeRegFeiMsb(registersConfig.RegFeiMsb);
@@ -199,8 +199,7 @@ readRegOpMode();
 	deviceState.BroadcastAddress = registersConfig.RegBroadcastAdrs;
 	deviceState.PacketPayloadSize = registersConfig.RegPayloadLength;
 
-
-	registersConfig.RegOpMode = LONG_RANGE_MODE_LORA_MODE | MODE_SLEEP_MODE | LOW_FREQ_MODE_ON_LOW_FREQ;
+	registersConfig.RegOpMode = LONG_RANGE_MODE_LORA_MODE | MODE_SLEEP_MODE | LOW_FREQ_MODE_ON_HIGH_FREQ;
 	registersConfigWriteErrors.RegOpMode = writeRegOpMode(registersConfig.RegOpMode);
 
 	//lora settings

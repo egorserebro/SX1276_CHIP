@@ -33,7 +33,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+#define TRANSMIT 1 
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -43,8 +43,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-uint8_t buff_LORA_OUT[16];
-uint8_t buff_LORA_IN[16];
+
 
 
 
@@ -60,8 +59,11 @@ while (ITM_Port32(0) == 0);
   }
   return(ch);
 }
+
+uint8_t RX_BUF[30]= {0,1,1,1};
 uint8_t TX_BUF[16] = {0,1,2,3};
 uint8_t i,Flag=0,rx_bytes,counter;
+uint8_t buff_LORA_OUT;
 
 SX1278_State_t SX1278_State;
 /* USER CODE END PM */
@@ -130,8 +132,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	DMA_USER_INIT();
 	SPI1_USER_INIT();
-	//SX1276_Init();	
-	//sx127x_read_register(0x42);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -140,35 +140,28 @@ int main(void)
 	
 SX1276_77_78_79_Reset();
 SX1276_77_78_79_LORA_Init(SX1278_State.NodeAddress,SX1278_State.BroadcastAddress, SX1278_State.PacketPayloadSize, 868, 6);
-
+	if(TRANSMIT == 0){
+		SX1276_77_78_79_setReceivingBuffer(RX_BUF);
+		SX1276_77_78_79_readFifoCallback();
+		
+	}
 
   
   while (1)
   {
     /* USER CODE END WHILE */
-	readRegOpMode();
+	
     /* USER CODE BEGIN 3 */
+	if(TRANSMIT == 1){
+	readRegOpMode();  
 	SX1276_77_78_79_sendData(TX_BUF, 9);
-	LL_mDelay(10);  
-
-//while (!Flag) {};	
-	  
-//SX1276_WriteSingle(REG_LR_OPMODE,RFLR_OPMODE_SLEEP|0x80);	
-//Flag=0;
-//delay_ms(3000);
-
-//sec_tic=0;
-//	  
-	  
-	  
-	  
-	 // SX1276_WriteSingle(1,1);
-//	  LL_mDelay(100);
-//	LL_GPIO_SetOutputPin(LED13_GPIO_Port, LED13_Pin);
-		LL_mDelay(100);
-//	LL_GPIO_ResetOutputPin(LED13_GPIO_Port, LED13_Pin);	
-	  printf("hello\n");
+	LL_mDelay(10);  	  
+	LL_mDelay(100);
+	printf("hello\n");
+	TX_BUF[2] = TX_BUF[2]++;  
+	}
   }
+	
   /* USER CODE END 3 */
 }
 
